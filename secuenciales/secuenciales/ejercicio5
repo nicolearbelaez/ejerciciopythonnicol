@@ -1,0 +1,14 @@
+"""
+Construya un algoritmo que calcule el sueldo total de un vendedor, dado su sueldo base y las
+comisiones de sus ventas. Para esto es necesario definir una variable que almacene el nombre del
+vendedor, una variable que almacene el sueldo y otra variable que almacene el valor de la comisión
+de las ventas realizadas. Se debe calcular el valor final de sueldo. 
+"""
+nombre=input("digite su nombre:")##le pido que digite su nombre
+sueldo=int(input("digite su sueldo:"))##le pido que digite cual es su sueldo
+comision=int(input("digite la comision:"))##le pido que digite cual es su comision
+sueldototal=sueldo+comision##se hace la suma para saber el sueldo total
+print(f"el vendedor(a)" ,nombre,", tiene un sueldo de" ,sueldo, "mil pesos"", durante el mes tuvo una comision de" ,comision, "mil pesos"" y el valor a pagar es" ,sueldototal)##se imprime el resultado de las variables
+
+
+

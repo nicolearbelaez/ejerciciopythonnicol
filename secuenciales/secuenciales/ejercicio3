@@ -1,0 +1,10 @@
+"""
+Construya un algoritmo que calcule el perímetro y el área de un rectángulo dada su base y su altura.
+La base y la altura deberán ser almacenadas previamente en dos variables respectivamente. 
+"""
+base=int(input("dijite numero:")) ##le pido que digite un numero
+altura=int(input("dijite otro numero:"))##le pido que digite otro
+#forma imprimir 1
+perimetro=(2*base+altura)##se asigna la operacion del perimetro del rectangulo
+area=(base*altura)##se asigna la operacion del area del rectangulo
+print(f"el perimetro es: {perimetro} el area es:{area}")##se visualiza el resulatdo de las operaciones 

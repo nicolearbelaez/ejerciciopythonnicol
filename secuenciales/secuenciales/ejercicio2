@@ -1,0 +1,8 @@
+"""
+Desarrolle un programa que declare tres variables. La primera guardará el nombre del estudiante,
+la segunda el nombre del colegio, la tercera el grado que cursa.
+"""
+nombre=input("digite su nombre:")##le pido que digite su nombre
+institucion=input("digite la institucion:")##le pido que digite en que institucion estudia
+trimestre=input("digite en que trimestre se encuentra:")#le pido que digite en que trimestre va
+print (f"el estudiante",nombre ,"estudia en el",institucion ,"esta en el",trimestre ,"trimestre")##se muestra el resultado final de la encuesta

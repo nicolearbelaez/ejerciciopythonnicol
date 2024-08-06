@@ -1,0 +1,10 @@
+"""
+Desarrolle un algoritmo que Programa que calcule el precio final de una compra, dado el valor de la
+compra y un descuento. Para esto es necesario declarar dos variables, una que guarde el valor de la
+compra y otra que almacene el valor del descuento.
+"""
+compra=int(input("Digite el total de la compra:"))##se ingresa el valor toalr de la compra
+descuento=int(input("Digite el descuesto:"))##se digita el descuento por la compra
+descuento=compra*(descuento/100)##se opera para hallar el descuento
+comprafinal=compra-descuento##se hace la operacion de restar para la compraFinal
+print(f"la compra fue de" ,compra, ", con un descuento de" ,descuento, "y el valor final a pagar es" ,comprafinal)##se imprime el resultado final de la variables

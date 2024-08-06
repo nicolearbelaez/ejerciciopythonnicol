@@ -1,0 +1,13 @@
+"""
+Desarrolle un algoritmo que permita calcular nota final de algoritmia de un estudiante.
+"""
+nombre=input("Digite su nombre:")##le pido que digite su nombre
+PromedioActividades=int(input("Digite su promedio de actividades realizadas:"))##le pido que digite el promedio de las actividades
+ProyectoFinal=int(input("Digite su calificacion del proyecto final:"))##le pido que digite la calificacion del proyecto final
+PromedioEvaluaciones=int(input("Digite su promedio de evaluaciones:"))##le pido que digite el promedio de las evaluaciones
+PromedioActividades=PromedioActividades*(30/100)##se hace la operacion para el promedio de las actividades
+ProyectoFinal=ProyectoFinal*(50/100)##se hace las operacion para la calificacion del proyecto final
+PromedioEvaluaciones=PromedioEvaluaciones*(20/100)##se hace la operacion para el promedio de las evaluaciones
+calificacionFinal=PromedioActividades+ProyectoFinal+PromedioEvaluaciones##se opera para la calificacion final
+print(f"la nota final de algoritmia del estudiante" ,nombre, "es:" ,calificacionFinal)##se imprime el nombre y la calificacion final
+

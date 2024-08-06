@@ -1,0 +1,10 @@
+"""
+Elabore un algoritmo que calcule el promedio de tres números, los cuales deben ser almacenados
+previamente en tres variables.
+"""
+numero1=int(input("Digite un valor:"))##se digitara un valor 
+numero2=int(input("Digite otro valor:"))##se digitara un valor diferente
+numero3=int(input("Digite otro valor:"))##se digitara otro valor diferente
+#forma imprimir 1
+promedio=(numero1+numero2+numero3/3)##se realiaza la operacion del promedio de 3 numeros
+print(f"el promedio es: {promedio}")##se visualiza el resultado final 
