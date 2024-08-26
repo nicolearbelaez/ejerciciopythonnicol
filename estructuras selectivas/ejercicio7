@@ -2,13 +2,17 @@
 En una llantera se ha establecido una promoción de las llantas marca "Todo Terreno", dicha promoción consiste en lo siguiente:
 Si se compran menos de cinco llantas el precio es de $300.000 cada una, de $250.000 si se compran de cinco a 10 y de $200.000 si se compran más de 10.
 """
+# Entrada de la cantidad de llantas a comprar
 numeroLlantas=int(input("Ingrese la cantidad de llantas que compro: "))
-
+# Verificar la cantidad de llantas y determinar 
 if numeroLlantas >= 10 :
-    valorLlanta= 200,000
+    valorLlanta= (200000)
 elif 5<= numeroLlantas <=10 :
     valorLlanta= (250000)
 else:
     valorLlanta= (300000)
+# Calcular el costo total
+valorLlantal = numeroLlantas * valorLlanta
+# Mostrar resultados
 print(f"El precio por llanta es: ${valorLlanta:,}")
 print(f"El costo total por {numeroLlantas} llantas es: ${valorLlanta:,}")

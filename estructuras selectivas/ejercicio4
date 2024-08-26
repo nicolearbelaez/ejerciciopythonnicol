@@ -3,11 +3,11 @@ En un supermercado se hace una promoción, mediante la cual el cliente obtiene u
 rojo el descuento es del 15% sobre el total de la compra, la balota es verde el descuento es del 20%. Si el color es diferente a los indicados no obtendrá descuento. 
 Imprimir el valor de la compra, el color de la balota, el descuento y el valor a pagar.
 """
-nombre=input("Ingrese su nombre y apellido:")
-ColorBalota=input("Digite el color de la balota (rojo, verde, otro):")
-valorCompra=int(input("Digite el valor de la compra:"))
+nombre=input("Ingrese su nombre y apellido:")## Entrada del nombre 
+ColorBalota=input("Digite el color de la balota (rojo, verde, otro):") ## Entrada del color de la balota 
+valorCompra=int(input("Digite el valor de la compra:")) ## le pido que ingrese el valor de la compra 
 
-
+## Verificar el color de la balota y calcular el descuento
 if ColorBalota == "rojo"  :
     descuento = 0.15 * valorCompra
     
@@ -17,12 +17,13 @@ elif ColorBalota == "verde" :
     
 else : 
     descuento = 0
-
+## Calcular el valor a pagar
 valorFinal= valorCompra - descuento
+## Mostrar resultados
 print(f"Valor de la compra: ${valorCompra}")
 print(f"Color de la balota: {ColorBalota}")
 print(f"Descuento aplicado: ${descuento}")
-print(f"Valor a pagar: ${valorFinal}")
+print(f"Valor a pagar: ${valorFinal:,}")
 
 
 

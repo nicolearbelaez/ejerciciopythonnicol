@@ -3,9 +3,9 @@ Se ha establecido un programa para estimular a los alumnos, el cual consiste en 
 igual que 4.0, se le hará un descuento del 30% sobre la pensión; si el promedio obtenido es menor que 4.0 deberá pagar la pensión completa, la cual incluye el 10% de 
 IVA. Obtener cuanto debe pagar un alumno.
 """
-promedio=int(input("Ingrese su promedio: "))
-pension=int(input("Ingrese el valor de su pension: "))
-
+promedio=int(input("Ingrese su promedio: ")) ## Entrada del promedio obtenido por el alumno
+pension=int(input("Ingrese el valor de su pension: ")) ## Entrada del costo de la pensión
+## Verificar el promedio y calcular el descuento
 if promedio >= 40:
     descuento= pension * 0.30
     valortotal= pension - descuento
@@ -13,5 +13,5 @@ if promedio >= 40:
 else:
     iva= pension * 0.1
     valortotal= pension + iva
-
+# Mostrar resultados
 print(f"el valor que debe pagar el estudiante es de : ${valortotal}")

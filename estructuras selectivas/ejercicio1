@@ -2,14 +2,17 @@
 determinar  si un aprendiz aprueba o desaprueba algoritmia, sabiendo que aprobara si su promedio de tres 
 calificaciones es mayo o igual a 70; reprueba en caso contrario
 """
-nombre=input("digite el nombre del estudiante:")
-calificacion1=int(input("digite su calificacion:"))
-calificacion2=int(input("digite su calificacion:"))
-calificacion3=int(input("digite su calificaciones:"))
-promedio=(calificacion1+calificacion2+calificacion3)/3
-if promedio >=70 :
+nombre=input("digite el nombre del estudiante:") ## le pido que ingrese su nombre
+calificacion1=int(input("digite su calificacion:")) ## le pido que ingrese su calificacion
+calificacion2=int(input("digite su calificacion:")) ## le pido que ingrese su calificacion
+calificacion3=int(input("digite su calificaciones:")) ## le pido que ingrese su calificacion
+promedio=(calificacion1+calificacion2+calificacion3)/3 ## se hace la respectiva operacion de suma y division para encontrar el promedio
+if promedio >=70 : ## el promedio debe ser mayor de 70
+    ## forma de imprimir
     print("el estudiante aprobo")
-else :
+else : ## el promedio debe ser menor 
+    ## forma de imprimir
     print("el estudiante desaprobo")
+
     
 

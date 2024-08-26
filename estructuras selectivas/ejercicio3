@@ -2,31 +2,28 @@
 Una empresa quiere hacer una compra de varias piezas de la misma clase a una fábrica de bolsos. La empresa, dependiendo del monto total de la compra, 
 decidirá qué hacer para pagar al fabricante
 """
-monto_total = int(input("Ingrese el monto total de la compra: "))
+montoTotal = int(input("Ingrese el monto total de la compra: ")) ## le pido que ingrese el monto total de la compra
+inversionPropia = 0 ## le pongo valor a la variable
+prestamoBanco = 0 ## le pongo valor a la variable
+creditoFabricante = 0 ## le pongo valor a la variable
 
 
-inversion_propia = 0
-prestamo_banco = 0
-credito_fabricante = 0
-
-
-if monto_total > 500000:
+if montoTotal > 500000: ## tiene que ser mayor de 500000
     
-    inversion_propia = monto_total * 0.55
-    prestamo_banco = monto_total * 0.30
-    credito_fabricante = monto_total * 0.15
+    inversionPropia = montoTotal * 0.55 ## se hace la operacion de multiplicacion
+    prestamoBanco = montoTotal * 0.30 ## se hace la operacion de multiplicacion
+    creditoFabricante = montoTotal * 0.15 ## se hace la operacion de multiplicacion
 else:
     
-    inversion_propia = monto_total * 0.70
-    credito_fabricante = monto_total * 0.30
+    inversionPropia = montoTotal * 0.70 ## se hace la operacion de multiplicacion
+    creditoFabricante = montoTotal * 0.30 ## se hace la operacion de multiplicacion
 
+interesCredito = creditoFabricante * 0.20 ## se hace la operacion de multiplicacion
+totalCreditoInteres = creditoFabricante + interesCredito ## se hace la operacion de sumar para el total credito de intereses
 
-interes_credito = credito_fabricante * 0.20
-total_credito_con_interes = credito_fabricante + interes_credito
-
-
-print(f"Valor invertido de su propio dinero: ${inversion_propia:,}")
-print(f"Valor prestado al banco: ${prestamo_banco:,}")
-print(f"Valor del crédito solicitado al fabricante: ${credito_fabricante:,}")
-print(f"Intereses sobre el crédito solicitado al fabricante: ${interes_credito:,}")
-print(f"Valor total a pagar al fabricante (con intereses): ${total_credito_con_interes:,}")
+## forma de imprimir 
+print(f"Valor invertido de su propio dinero: ${inversionPropia:,}")
+print(f"Valor prestado al banco: ${prestamoBanco:,}")
+print(f"Valor del crédito solicitado al fabricante: ${creditoFabricante:,}")
+print(f"Intereses sobre el crédito solicitado al fabricante: ${interesCredito:,}")
+print(f"Valor total a pagar al fabricante (con intereses): ${totalCreditoInteres:,}")
