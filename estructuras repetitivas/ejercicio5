@@ -13,7 +13,7 @@ contadorJovenes=0
 contadorAdultos=0
 contadorAncianos=0
 ## se ingresa la edad y el peso de la persona
-for i in range (5):
+for i in range (50):
     edad=int (input(f"ingrese la edad de las persona {i+1}: "))
     peso=int  (input(f"ingrese el peso de las persona {i+1}: "))
 
