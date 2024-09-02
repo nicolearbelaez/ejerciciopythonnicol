@@ -1,0 +1,11 @@
+"""
+Calcular e imprimir la tabla de multiplicar de un número cualquiera, el cual se
+digitará por teclado. Imprimir el multiplicando, el multiplicador y el producto.
+"""
+## Ingresar cualquier numero de la tabla de multiplicar
+numero = int(input("Ingrese un número para la tabla de multiplicar: "))
+## Calcular la multiplicacion
+for i in range(1, 11):
+ producto = numero * i
+ ## forma de imprimir
+ print(f"{numero} x {i} = {producto}")

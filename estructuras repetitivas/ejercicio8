@@ -1,0 +1,34 @@
+"""
+un grupo de 23 estudiantes presentan un examen de algoritmia. Hacer un
+algoritmo que lea por cada estudiante la calificación obtenida. Al finalizar calcule e
+imprima:
+• La cantidad de estudiantes que obtuvieron una calificación menor a 50.
+• La cantidad de estudiantes que obtuvieron una calificación de 50 o más pero
+menor que 70.
+• La cantidad de estudiantes que obtuvieron una calificación de 70 o más pero
+menor que 80.
+• La cantidad de estudiantes que obtuvieron una calificación de 80 o más.
+La calificación obtenida en el examen de algoritmia debe ser entre 1 y 100.
+"""
+## variable contadores
+contador1 = 0
+contador2 = 0
+contador3 = 0
+contador4 = 0
+## ingresar las calificaciones
+for i in range(23):
+ calificacion = int(input("Ingrese la calificación del estudiante (1 a 100): "))
+
+ if calificacion < 50:
+     contador1 += 1
+ elif calificacion < 70:
+     contador2 += 1
+ elif calificacion < 80:
+     contador3 += 1
+ else:
+     contador4 += 1
+## forma de imprimir
+print(f"Estudiantes con calificación menor a 50: {contador1}")
+print(f"Estudiantes con calificación entre 50 y 69: {contador2}")
+print(f"Estudiantes con calificación entre 70 y 79: {contador3}")
+print(f"Estudiantes con calificación de 80 o más: {contador4}")

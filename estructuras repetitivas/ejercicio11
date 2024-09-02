@@ -1,0 +1,40 @@
+"""
+Pedir los datos de los alumnos, estos son: sexo, edad y altura. Al final del programa
+se deberá mostrar la cantidad de hombres, la cantidad de mujeres, la altura promedio
+,la cantidad de alumnos que tienen una altura mayor a 1.70 cm, la cantidad de alumnos
+que tiene una altura menor o igual a 1.50 cm. El programa debe finalizar cuando la edad
+sea igual a 0.
+"""
+## variables contadores y acumuladores
+contadorHombres = 0
+contadorMujeres = 0
+Alturas = 0
+contadorAlturaMay170 = 0
+contadorAlturaMenIgual150 = 0
+## ingresar datos de alumnos
+while True:
+ sexo = input("Ingrese el sexo del alumno (M o F): ")
+ edad = int(input("Ingrese la edad del alumno (0 para finalizar): "))
+ if edad == 0:
+  break
+ altura = int(input("Ingrese la altura del alumno en metros: "))
+
+ if sexo == 'M':
+     contadorHombres += 1
+ elif sexo == 'F':
+     contadorMujeres += 1
+
+ Alturas += altura
+ if altura > 1.70:
+     contadorAlturaMay170 += 1
+ if altura <= 1.50:
+     contadorAlturaMenIgual150 += 1
+## Calcular promedios
+cantidadAlumnos = contadorHombres + contadorMujeres
+promedioAltura = Alturas / cantidadAlumnos if cantidadAlumnos > 0 else 0
+## forma de imprimir
+print(f"Cantidad de hombres: {contadorHombres}")
+print(f"Cantidad de mujeres: {contadorMujeres}")
+print(f"Altura promedio del grupo: {promedioAltura:.2f} metros")
+print(f"Cantidad de alumnos con altura mayor a 1.70 m: {contadorAlturaMay170}")
+print(f"Cantidad de alumnos con altura menor o igual a 1.50 m: {contadorAlturaMenIgual150}")

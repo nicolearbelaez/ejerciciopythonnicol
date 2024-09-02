@@ -1,0 +1,29 @@
+"""
+Calcular el promedio de edades de hombres, mujeres y de todo un grupo de alumnos
+"""
+## variables contadores y acumuladores
+EdadesHombres = 0
+EdadesMujeres = 0
+contadorHombres = 0
+contadorMujeres = 0
+## ingresar la cantidad de alumnos
+n = int(input("Ingrese la cantidad total de alumnos: "))
+## ingresar el sexo y edad de cada alumno
+for i in range(n):
+ sexo = input("Ingrese el sexo del alumno (M o F): ")
+ edad = int(input("Ingrese la edad del alumno: "))
+
+ if sexo == 'M':
+     EdadesHombres += edad
+     contadorHombres += 1
+ elif sexo == 'F':
+     EdadesMujeres += edad
+     contadorMujeres += 1
+## Calcular promedios
+promedioHombres = EdadesHombres / contadorHombres if contadorHombres > 0 else 0
+promedioMujeres = EdadesMujeres / contadorMujeres if contadorMujeres > 0 else 0
+promedioGrupo = (EdadesHombres + EdadesMujeres) / n if n > 0 else 0
+## forma de imprimir
+print(f"Promedio de edad de los hombres: {promedioHombres}")
+print(f"Promedio de edad de las mujeres: {promedioMujeres}")
+print(f"Promedio de edad del grupo: {promedioGrupo}")
